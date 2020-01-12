@@ -1,19 +1,23 @@
 1. What problem does the context API help solve?
 
-    It solves the problem of passing down props from parent to component by providing a provider and consumer situation that can pass the props to each other.
+    The contex API allows us to centralize the state in its own store, away from the user interface portfions of the application.
 
-2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+1. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
 
-    Actions are subroutines that tell the reducer how to update the state of the application. These actions are created by the action creators. The store is the single source of truth because it is the management center for state with the help of the reducers.
+    - Actions: Specified by the developer and made by the user. They are dispatched to various areas of the application.
 
-3. What is the difference between Application state and Component state? When would be a good time to use one over the other?
+    - Reducers: Take actions and return responses.
 
-Application state refers to the overall application data and the component state refers to the data that a particular component uses directly.
+    - Store: This contains the state and reducers and helps centralize the application's dynamic behavior. The store is known as the "beacon of truth" because it contains all behavior put into the program in one place.
 
-4. Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+1. What is the difference between Application state and Component state? When would be a good time to use one over the other?
 
-Thunk is middleware that allows you to write action creators that return a function instead of on action. The thunk can be used to delay the dispatch of an action or to dispatch only if certain conditions are met.
+    Application state, otherwise known as the global state, dictates total app behavior. Likewise, component state is limited to a specific component. So you will need to decide if the state needs to be availble throughout the application or just that one component.
 
-5. What is your favorite state management system you've learned and this sprint? Please explain why!
+1. Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
 
-Redux is because of the simplicity of how it manages state from the single source of truth. The store handles the state globally.
+    Redux-thunk serves as middleware expanding redux's ability to perform asynchronous actions.
+
+1. What is your favorite state management system you've learned and this sprint? Please explain why!
+
+    Redux, it simplifies UI development while also providing additional complexity that is useful when developing applications.

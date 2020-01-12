@@ -16,7 +16,7 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 ## Description
 
-In this challenge, you are to build a Smurfs village utilizing context or Redux as your state management. Build this challenge from the ground up using what you have learned about state management.
+In this challenge, you are to build the Smurfs village once again, only this time, you will utilize context or Redux as your state management. Don't use any old code from your previous Smurfs Sprint Challenge. Build this challenge from the ground up using what you have learned about state management.
 
 ## Self-Study/Essay Questions
 
@@ -36,7 +36,7 @@ Follow these steps to set up your project:
 - [ ] `cd` into the forked copy of this repository.
 - [ ] **RUN** `yarn` to retrieve all `server-side` the dependencies.
 - [ ] **RUN** `yarn start` or `npm start` to get your API up and running on `http://localhost:3333`. This is the **URL** you're going to need to use within your React app in order to make AJAX requests for data.
-- [ ] After your API is up and running, you can open chrome and type in `http://localhost:3333/smurfs`. You should see an array with one smurf in it returned to you. This is an array that your **API** will be using to store our Smurf Data.
+- [ ] After your API is up and running, you can open chrome and type in `http://localhost:3333/smurfs`. You should see an empty Array `[]` returned to you. This is an array that your **API** will be using to store our Smurf Data.
 - [ ] **LOOK** at your `smurfs` directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
 - [ ] **Open** `src/index.js` to make sure that your app is ready to roll with the proper middleware.
 - [ ] **cd** into `smurfs` and run `yarn` to retrieve the client side dependencies.
@@ -48,7 +48,7 @@ Follow these steps to set up your project:
 
 - [ ] Plan and implement how you are going to manage your state for your application
 - [ ] You _must_ use either context or Redux as your state management system
-- [ ] Once you have planned out your state management system, fetch data from the smurf server and display the data it returns
+- [ ] Once you have planned out your state management system, fetch data from the smurf server
 - [ ] Add a form to collect info for a new smurf, and make a POST request to the server to add a new smurf to your village
 
 ## API documentation
